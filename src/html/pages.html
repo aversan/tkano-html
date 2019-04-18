@@ -1,0 +1,19 @@
+{% extends 'layouts/application.html' %}
+
+{% macro page(name) %}
+<p><a href="{{name}}.html" target="_blank">{{name}}</a></p>
+{% endmacro %}
+
+{%
+	set title = ''
+%}
+
+{% block content %}
+
+<div class="container">
+    <div class="section-divider"></div>
+    {{ page('invite') }}
+    <div class="section-divider"></div>
+</div>
+
+{% endblock %}

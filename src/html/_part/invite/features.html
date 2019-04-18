@@ -1,0 +1,15 @@
+<section>
+	<h2 class="font-weight-bold mb-0 text-center">{{invite.features.title}}</h2>
+	<div class="row feature-row py-6 mb-6">
+		{% for item in invite.features.items %}
+		<div class="col-6 col-sm-4 feature-col d-flex">
+			<div class="feature-item w-100 mx-auto text-center my-4">
+				<div class="icon icon-{{item.iconName}} feature-item-icon mb-4 mx-auto">
+					{{item.iconSVG | safe}}
+				</div>
+				<h4 class="mb-0 h6 font-weight-bold feature-item-title">{{item.title | safe}}</h4>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+</section>

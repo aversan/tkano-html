@@ -1,0 +1,19 @@
+.feature {
+    &-item {
+        max-width: 210px;
+
+        &-icon,
+        &-icon svg {
+            min-width: 86px;
+            width: 86px;
+            height: 86px;
+        }
+
+        // &-title {
+        //     line-height: 1.25rem;
+        //     max-width: 100%;
+        //     overflow: hidden;
+        //     max-height: 2.5rem;
+        // }
+    }
+}

@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,600,700&subset=cyrillic');
+
+/* eb-garamond-regular - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('EB Garamond Regular'), local('EBGaramond-Regular'),
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-regular.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}
+/* eb-garamond-500italic - latin_cyrillic-ext_cyrillic */
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src: url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.eot'); /* IE9 Compat Modes */
+  src: local('EB Garamond Medium Italic'), local('EBGaramond-MediumItalic'),
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.woff') format('woff'), /* Modern Browsers */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../font/eb-garamond-v9-latin_cyrillic-ext_cyrillic-500italic.svg#EBGaramond') format('svg'); /* Legacy iOS */
+}

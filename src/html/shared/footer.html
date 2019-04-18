@@ -1,0 +1,117 @@
+<footer>
+    <script type="text/javascript">
+function initWsmFavtoFav() {
+    new BX.WSMFavorites({
+    'link':      'toFav',
+    'fav_text':  '<i class="icon-heart"></i>',
+    'fav_class': '',
+    'onGetTotal': function (total) {
+        $(".header_favourites_counter").toggle(total > 0).text(total ? total : "");
+    },
+    'onClick': function(a,b,c) {
+        try { fbq('track', 'AddToWishlist'); ga('send', 'event', 'favorite', 'add'); } catch (ex) {}
+    }
+    }); 
+}
+BX.ready(function(){
+    initWsmFavtoFav();
+});
+</script>
+    <div class="header_content footer_pic_center">
+        <div class="footer_left">
+            <div class="footer_logo"><img src="https://tkano.ru/local/templates/201810/pic/logo.svg" alt=""></div>
+
+            <div class="footer_items">
+                <!-- first level-->
+<div class="footer_nav_item">
+    <div class="footer_nav_item_title">Интернет-магазин</div>
+                <ul>
+                                  <!-- second level-->
+                    <li><a href="/catalog/spalnya/">Спальня</a></li>
+                  <!-- second level-->
+                    <li><a href="/catalog/vannaya-komnata/">Ванная комната</a></li>
+                  <!-- second level-->
+                    <li><a href="/catalog/kukhnya/">Кухня</a></li>
+                  <!-- second level-->
+                    <li><a href="/catalog/dekorativnyy-tekstil/">Декоративный текстиль</a></li>
+                  <!-- second level-->
+                    <li><a href="/catalog/stolovaya/">Столовая</a></li>
+                                            </ul>
+        </div>
+<!-- first level-->
+<div class="footer_nav_item">
+    <div class="footer_nav_item_title">Мир Tkano</div>
+                <ul>
+                                  <!-- second level-->
+                    <li><a href="/about/">О бренде</a></li>
+                  <!-- second level-->
+                    <li><a href="/about/shops/">Где купить</a></li>
+                  <!-- second level-->
+                    <li><a href="/about/press/">Пресс-центр</a></li>
+                  <!-- second level-->
+                    <li><a href="/about/contacts/">Контакты</a></li>
+                                            </ul>
+        </div>
+<!-- first level-->
+<div class="footer_nav_item">
+    <div class="footer_nav_item_title">Коллекции</div>
+                <ul>
+                                  <!-- second level-->
+                    <li><a href="/collections/ethnic/">Ethnic</a></li>
+                  <!-- second level-->
+                    <li><a href="/collections/cuts-pieces/">Cuts &amp; Pieces</a></li>
+                  <!-- second level-->
+                    <li><a href="/collections/russian-north/">Russian North</a></li>
+                  <!-- second level-->
+                    <li><a href="/collections/essential/">Essential</a></li>
+                                            </ul>
+        </div>
+<!-- first level-->
+<div class="footer_nav_item">
+    <div class="footer_nav_item_title">Сервис</div>
+                <ul>
+                                  <!-- second level-->
+                    <li><a href="/service/delivery-n-payment/">Доставка и оплата</a></li>
+                  <!-- second level-->
+                    <li><a href="/service/returns/">Возврат товара</a></li>
+                                            </ul>
+        </div>
+            </div>
+
+        </div>
+        <div class="footer_right">
+            <div class="footer_subscribe_title">Подпишитесь на нашу рассылку</div>
+            <form id="footer_subscribe_form" action="/404.php">
+                <input type="email" required="" name="email" class="" placeholder="Ваша почта">
+                <input type="submit" value="Подписаться">
+            </form>
+            <div id="footer_subscribe_form_error" class="form_error" style="display: none;"></div>
+            
+            <div class="footer_social">
+                <div class="footer_social_title">Tkano в социальных сетях</div>
+                <ul>
+                    <li><a href="https://www.facebook.com/tkano.ru/" rel="noreferrer" target="_blank"><img src="https://tkano.ru/local/templates/201810/pic/social1.svg" alt=""></a></li>
+                    <li><a href="https://www.instagram.com/tkano.ru/" rel="noreferrer" target="_blank"><img src="https://tkano.ru/local/templates/201810/pic/social2.svg" alt=""></a></li>                    </ul>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            <div class="footer_bottom_links_logo"><img src="https://tkano.ru/local/templates/201810/pic/logo.svg" alt=""></div>
+            <ul>
+                <li>Tkano ©2018</li>
+                <li><a href="tel:8 800 707 78 43">8 800 707 78 43</a></li>
+                <li><a href="mailto:hello@tkano.ru">hello@tkano.ru</a></li>
+            </ul>
+        </div>
+        <div class="footer_bottom_links">
+            <div class="footer_bottom_left">
+                <ul>
+                    <li><a href="/upload/docs/oferta.pdf" target="_blank">Юридическая информация</a></li>
+                    <li><a href="/service/">Информация для потребителей</a></li>
+                </ul>
+            </div>
+            <div class="footer_bottom_right">
+                Сделано в <a href="http://rockettool.ru" rel="noreferrer" target="_blank">Rockettool</a>
+            </div>
+        </div>
+    </div>
+</footer>

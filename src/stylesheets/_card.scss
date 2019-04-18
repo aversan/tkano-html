@@ -1,0 +1,43 @@
+.card-intro {
+    .card-img,
+    .card-body {
+        @include media-breakpoint-up(sm) {
+            width: 50%;
+        }
+    }
+
+    .card-img {
+        @include media-breakpoint-up(lg) {
+            transform: scale(1.53);
+            
+        }
+
+        @include media-breakpoint-up(sm) {
+            position: relative;
+        }
+    }
+}
+
+.card-intro .card-img {
+    transform-origin: bottom right;
+
+    @include media-breakpoint-up(sm) {
+        left: -15px;
+    }
+}
+
+.card-intro + .card-intro .card-img {
+    transform-origin: bottom left;
+
+    @include media-breakpoint-up(sm) {
+        left: 15px;
+    }
+}
+
+.container.card-intro-container {
+    @include media-breakpoint-up(lg) {
+        padding-left: 150px;
+        padding-right: 150px;
+        max-width: 1440px;        
+    }
+}

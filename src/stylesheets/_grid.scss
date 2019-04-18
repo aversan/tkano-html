@@ -1,0 +1,10 @@
+.small-gutters {
+    margin-right: -7px;
+    margin-left: -8px;
+}
+
+.small-gutters > .col,
+.small-gutters > [class*="col-"] {
+    padding-right: 7px;
+    padding-left: 8px;
+}
