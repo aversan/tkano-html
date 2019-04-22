@@ -35,9 +35,12 @@
 }
 
 .container.card-intro-container {
+	width: 100%;
+    
     @include media-breakpoint-up(lg) {
         padding-left: 150px;
         padding-right: 150px;
         max-width: 1440px;        
+        width: 100%;
     }
 }
