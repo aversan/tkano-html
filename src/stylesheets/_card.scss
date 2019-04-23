@@ -1,16 +1,18 @@
 .card-intro {
+    background-color: transparent;
+    
     .card-img,
     .card-body {
         @include media-breakpoint-up(sm) {
-            width: 50%;
+            width: calc(50% - .75rem);
         }
     }
 
     .card-img {
-        @include media-breakpoint-up(lg) {
-            transform: scale(1.23);
+        // @include media-breakpoint-up(lg) {
+        //     transform: scale(1.23);
             
-        }
+        // }
 
         @include media-breakpoint-up(sm) {
             position: relative;
@@ -21,25 +23,43 @@
 .card-intro .card-img {
     transform-origin: bottom right;
 
+    // @include media-breakpoint-up(sm) {
+    //     left: -15px;
+    // }
+}
+
+.card-intro + .card-intro {
     @include media-breakpoint-up(sm) {
-        left: -15px;
+        margin-top: -12vw !important;
+    }
+    
+    @include media-breakpoint-up(md) {
+        margin-top: -17vw !important;
+    }
+
+    @include media-breakpoint-up(lg) {
+        margin-top: -25vw !important;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: -420px !important;
     }
 }
 
 .card-intro + .card-intro .card-img {
     transform-origin: bottom left;
 
-    @include media-breakpoint-up(sm) {
-        left: 15px;
-    }
+    // @include media-breakpoint-up(sm) {
+    //     left: 15px;
+    // }
 }
 
 .container.card-intro-container {
 	width: 100%;
     
     @include media-breakpoint-up(lg) {
-        padding-left: 150px;
-        padding-right: 150px;
+        // padding-left: 150px;
+        // padding-right: 150px;
         max-width: 1440px;        
         width: 100%;
     }
